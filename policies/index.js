@@ -8,7 +8,7 @@ new policy.PolicyPack("azure-webserver-demo", {
         description: "Check Azure Account Storage resources and their replication types.",
         enforcementLevel: "advisory",
         validateResource: policy.validateResourceOfType(azure.storage.Account, (account, args, reportViolation) => {
-            if (args.accountReplicationType === "LRS") {
+            if (account.accountReplicationType === "LRS") {
                 reportViolation(
                     "Azure Storage Account replcaition shouldn't be set lower than 'ZRS' as per " +
                     "company policy. Use either 'ZRS' or 'GRS'. Read more about read access here: " +

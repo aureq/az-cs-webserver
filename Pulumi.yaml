@@ -1,0 +1,3 @@
+name: az-cs-webserver
+description: A minimal C# Pulumi program with the classic Azure provider
+runtime: dotnet

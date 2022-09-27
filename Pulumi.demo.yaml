@@ -1,0 +1,4 @@
+config:
+  az-cs-webserver:adminpassword:
+    secure: AAABABkPEziBG79NvOmu4oDUQHsg/s6AV8S3n9FeidLeQk2ma+gCUF8stzlL5PftlpjiExfxA5/nyQSwnTH7haolncG2DcIcD9BhWw==
+  azure:location: australiasoutheast

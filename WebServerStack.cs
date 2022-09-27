@@ -33,8 +33,8 @@ class WebServerStack : Stack
                 WebServerResourceGroup = resourceGroup,
                 ReportStorageAccount = storageAccount,
                 AdminUser = "AcmeAdmin",
-                AdminPassword = "HardcodedPasswords!AreBad4YourH3alth#",
-                // AdminPassword = stackConfig.RequireSecret("adminpassword"),
+                // AdminPassword = "HardcodedPasswords!AreBad4YourH3alth#",
+                AdminPassword = stackConfig.RequireSecret("adminpassword"), // pulumi config set adminpassword --secret
             },
             new ComponentResourceOptions {
                 Parent = resourceGroup
